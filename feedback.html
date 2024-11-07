@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+    <div class="btn_one">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#">Divye</a>
+      </div>
+      <div class="btn_two">
+        <label for="check" style="color: grey">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><i class="fa-solid fa-home"></i><a href="index.html">Home</a></li>
+          <li><i class="fa-solid fa-image"></i><a href="gallery.html">Gallery</a></li>
+          <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="exhibits.html">Exhibits</a></li>
+          <li><i class="fa-solid fa-calendar-days"></i><a href="events.html">Events</a></li>
+          <li><i class="fa-solid fa-store"></i><a href="store.html">Store</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
+          <li><i class="fa-regular fa-comments"></i><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </ul>
+      </div>
+    </div>
+
+    <section class="feedback-section">
+      <h1>We Value Your Feedback</h1>
+      <p>Let us know how we’re doing! Your feedback helps us improve and create a better experience for everyone.</p>
+
+      <div class="feedback-container">
+        <form class="feedback-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" required />
+          <textarea placeholder="Your Feedback" rows="5" required></textarea>
+          <button type="submit">Submit Feedback</button>
+        </form>
+
+        <div class="testimonial-section">
+          <h3>What Our Visitors Say</h3>
+          <div class="testimonial">
+            <p>"Absolutely loved the exhibits! Such a wonderful experience, can't wait to come back."</p>
+            <span>- Alex R.</span>
+          </div>
+          <div class="testimonial">
+            <p>"The gallery was beautiful, and the staff were incredibly helpful."</p>
+            <span>- Priya S.</span>
+          </div>
+          <div class="testimonial">
+            <p>"A great place to visit with friends and family. Highly recommended!"</p>
+            <span>- Michael T.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #e0245e;
+}
+
+a {
+  color: #1f51ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn_one i,
+.btn_two i {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn_one {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s linear;
+}
+
+.logo a {
+  position: absolute;
+  left: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn_two {
+  position: absolute;
+  left: 275px;
+  top: 10px;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+.menu i,
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu ul li:hover {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.social_media {
+  position: absolute;
+  left: 25%;
+  bottom: 50px;
+}
+
+.social_media a {
+  color: white;
+  opacity: 0.5;
+  padding: 0 5px;
+}
+
+.social_media a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+
+.hero {
+  background: url("images/event-hero-bg.jpg") no-repeat center center/cover;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.event-highlights {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.event-highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.event-item {
+  background-color: #282828;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.event-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-item h3 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.event-item p {
+  font-size: 1rem;
+  padding: 0 10px 10px;
+}
+
+.about-events {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-events h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-events p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Sidebar styles */
+.btn_one i,
+.btn_two i {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn_one {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s linear;
+}
+
+.logo a {
+  position: absolute;
+  left: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.btn_two {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 16px 20px;
+}
+
+.menu i,
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+}
+
+.social_media {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+
+.social_media a {
+  color: white;
+  opacity: 0.5;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.social_media a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: url("images/hero-bg.jpg") no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Exhibit Highlights Section */
+.exhibit-highlights {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.exhibit-highlights h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.exhibit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.exhibit-item img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.exhibit-item h3 {
+  font-size: 1.25rem;
+  margin: 10px 0;
+}
+
+.exhibit-item p {
+  font-size: 1rem;
+}
+
+/* About Exhibits Section */
+.about-exhibits {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-exhibits h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-exhibits p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - image5raphy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <div class="main_box">
+    <input type="checkbox" id="check" />
+    <div class="btn_one">
+      <label for="check">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+
+    <div class="sidebar_menu">
+      <div class="logo">
+        <a href="#">Divye</a>
+      </div>
+      <div class="btn_two">
+        <label for="check" style="color: grey">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><i class="fa-solid fa-home"></i><a href="index.html">Home</a></li>
+          <li><i class="fa-solid fa-image"></i><a href="gallery.html">Gallery</a></li>
+          <li><i class="fa-solid fa-arrow-up-right-from-square"></i><a href="exhibits.html">Exhibits</a></li>
+          <li><i class="fa-solid fa-calendar-days"></i><a href="events.html">Events</a></li>
+          <li><i class="fa-solid fa-store"></i><a href="#">Store</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
+          <li><i class="fa-regular fa-comments"></i><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery_container">
+    <section class="gallery">
+      <h1>          Photoraphy Gallery</h1>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/image1.png" alt="Gallery Image 1" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image2.png" alt="Gallery Image 2" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image3.png" alt="Gallery Image 3" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image4.png" alt="Gallery Image 4" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image5.png" alt="Gallery Image 5" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image6.png" alt="Gallery Image 6" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image7.png" alt="Gallery Image 7" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image8.png" alt="Gallery Image 8" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image9.png" alt="Gallery Image 9" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image10.png" alt="Gallery Image 10" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image11.png" alt="Gallery Image 11" class="gallery-img"/>
+        </div>
+        <div class="gallery-item">
+          <img src="images/image12.png" alt="Gallery Image 12" class="gallery-img"/>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="modal" class="modal">
+    <span id="close" class="close">&times;</span>
+    <img id="modal-image" class="modal-content" />
+  </div>
+
+  <script src="gallery.js">
+
+  </script>
+
+</body>
+</html>
